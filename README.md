@@ -22,7 +22,7 @@ You can pick and mix from the available scripts, by linking the individual them 
 
 Alternatively there is an install script which will try to link the scripts matching services configured to run at init level 3 as detected by chkconfig.
 
-        # sudo git clone git://github.com/tolland/monit-shared.git /usr/share/monit-shared
+        # sudo git clone git@github.com:nuriyadin/monit-script.git /usr/share/monit-shared
         # sudo chmod +x /usr/share/monit-shared/install.sh
         # sudo /usr/share/monit-shared/install.sh
         
