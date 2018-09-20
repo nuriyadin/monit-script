@@ -32,7 +32,7 @@ Alternatively there is an install script which will try to link the scripts matc
 
 1. clone or export the project into your server;
 
-        sudo git clone git://github.com/tolland/monit-shared.git /usr/share/monit-shared
+        # sudo git clone git@github.com:nuriyadin/monit-script.git /usr/share/monit-shared
 
 
 2. review the scripts for anything interesting
@@ -45,21 +45,19 @@ Alternatively there is an install script which will try to link the scripts matc
 
 3. either install all the scripts, and get deluged with alerts;
 
-        sudo ln -s -t /etc/monit.d/ /usr/share/monit-shared/monit.d/* 
+        # sudo ln -s -t /etc/monit.d/ /usr/share/monit-shared/monit.d/* 
 
 Or just link the ones you want to monit;
 
-        sudo ln -s /usr/share/monit/monit.d/chef-client.conf /etc/monit.d/chef-client.conf
+        # sudo ln -s /usr/share/monit/monit.d/chef-client.conf /etc/monit.d/chef-client.conf
 
-4.
-check the config and restart monit;
+4. check the config and restart monit;
 
         # monit -t 
         Control file syntax OK
 
 
-5.
-restart monit.
+5. restart monit.
 
         # service monit restart
         Stopping monit: 
